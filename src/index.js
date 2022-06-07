@@ -9,7 +9,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.hydrateRoot(
     document.getElementById('root'),
     <StrictMode>
-            <App />
+        <App />
     </StrictMode>
 )
 

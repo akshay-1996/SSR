@@ -15,8 +15,8 @@ function App() {
   return (
     <React.Fragment>
       <p>{count}</p>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
+      <button style={{color: "green"}} className="buttons" onClick={increment}>Increment</button>
+      <button style={{color: "red"}} className="buttons" onClick={decrement}>Decrement</button>
     </React.Fragment>
   );
 }
