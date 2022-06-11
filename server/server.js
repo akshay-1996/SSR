@@ -17,6 +17,7 @@ const App = require("../src/App").default;
 const PORT = 8080;
 const app = express();
 const router = express.Router();
+// const helmet = Helmet.renderStatic();
 
 app.use("/build", express.static("build"));
 

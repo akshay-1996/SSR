@@ -1,24 +1,36 @@
-import './App.css';
-import React from 'react';
+import React, { useEffect } from 'react';
+import CounterFunction from './Components/CounterFunction';
+import "./App.css";
 
 function App() {
-  const [count, setCount] = React.useState(0)
 
-  const increment=()=>{
-    setCount(count+1)
-  }
-
-  const decrement=()=>{
-    setCount(count-1)
-  }
+  useEffect(()=>{
+    // console.log(document.body);
+    // console.log(typeof document.body);
+    const data = document.body.innerHTML
+    // console.log(data);
+    // console.log(typeof data);
+    const data1 = data.replace("<img","<amp-img");
+    const a = data1.replace("</img>","</amp-img>");
+    // console.log(a);
+    // console.log(typeof a);
+    const element = document.getElementById("root");
+    element.remove();
+    document.body.insertAdjacentHTML("beforeend",a);
+    // const a = document.getElementsByTagName("p")[0];
+    // console.log(a);
+    // const b = document.createElement("div");
+    // console.log(b);
+    // b.innerHTML = a.innerHTML;
+    // document.body.replaceChild(b,a);
+    // console.log(document.body);
+  })
 
   return (
-    <React.Fragment>
-      <p>{count}</p>
-      <button style={{color: "green"}} className="buttons" onClick={increment}>Increment</button>
-      <button style={{color: "red"}} className="buttons" onClick={decrement}>Decrement</button>
-    </React.Fragment>
-  );
+    <div>
+      <CounterFunction/>
+    </div>
+   );
 }
 
 export default App;
