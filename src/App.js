@@ -10,8 +10,11 @@ function App() {
     const data = document.body.innerHTML
     // console.log(data);
     // console.log(typeof data);
-    const data1 = data.replace("<img","<amp-img");
-    const a = data1.replace("</img>","</amp-img>");
+    // <carousel
+    const data1 = data.replace("<carousel","<amp-carousel");
+    const data2 = data1.replace("</carousel>","</amp-carousel>");
+    const data3 = data2.replace("<img","<amp-img");
+    const a = data3.replace("</img>","</amp-img>");
     // console.log(a);
     // console.log(typeof a);
     const element = document.getElementById("root");
