@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+
 class CounterClass extends Component {
 
   constructor(props){
@@ -46,5 +47,6 @@ class CounterClass extends Component {
     );
   }
 }
+
  
 export default CounterClass;

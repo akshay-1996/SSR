@@ -1,13 +1,38 @@
 .buttons{
-  background-color: aquamarine;
+  background-color: gray;
+  height: 5rem;
+  width: 14rem;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
 }
 
 .articlesh2{
   color: brown;
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+.articles-p{
+  font-size: 20px;
+  font-family: sans-serif;
 }
 
 .h4{
   color: gray;
-  font-size: 1rem;
+  font-size: 2rem;
 }
+
+#test{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tag-p{
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+/* .box-latest{
+  height: 100vh;
+} */
