@@ -1,17 +1,10 @@
-// import path from 'path';
 const path = require("path");
-// import fs from 'fs';
 const fs = require("fs");
-// import express from 'express';
 const express = require("express");
-// import React, { Profiler } from 'react';
 const React = require("react");
-// import ReactDOMServer from 'react-dom/server';
 const ReactDOMServer = require("react-dom/server");
-// import StaticRouter from 'react-router-dom';
 const { StaticRouter } = require("react-router-dom/server");
 
-// import App from '../src/App';
 const App = require("../src/App").default;
 
 const PORT = 8080;

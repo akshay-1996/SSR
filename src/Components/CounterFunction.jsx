@@ -140,32 +140,29 @@ function CounterFunction() {
     ></img>
   </button>
 </div> */}
-            <amp-accordion class="myaccordion">
+            <accordion className="myaccordion">
               <section expanded>
                   <h3>Ships</h3>
-                  <div class="content">
-                      <amp-img src="https://cdn.pixabay.com/photo/2016/05/02/10/13/ship-1366926__340.jpg" width="640" height="480">
-                          <div fallback>Image could not be loaded</div>
-                      </amp-img>
+                  <div className="content">
+                      <img src="https://cdn.pixabay.com/photo/2016/05/02/10/13/ship-1366926__340.jpg" alt="images" width="640" height="480">
+                      </img>
                   </div>
               </section>
               <section>
                   <h3>Beautiful butterflies</h3>
-                  <div class="content">
-                      <amp-img src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567__340.jpg" width="640" height="480">
-                          <div fallback>Image could not be loaded</div>
-                      </amp-img>
+                  <div className="content">
+                      <img src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567__340.jpg" alt="images" width="640" height="480">
+                      </img>
                   </div>
               </section>
               <section>
                   <h3>Hills</h3>
-                  <div class="content">
-                      <amp-img src="https://cdn.pixabay.com/photo/2015/01/28/23/35/hills-615429__340.jpg" width="640" height="480">
-                          <div fallback>Image could not be loaded</div>
-                      </amp-img>
+                  <div className="content">
+                      <img src="https://cdn.pixabay.com/photo/2015/01/28/23/35/hills-615429__340.jpg" alt="images" width="640" height="480">
+                      </img>
                   </div>
               </section>
-          </amp-accordion>
+          </accordion>
             </div>
         </div>
       </div>
